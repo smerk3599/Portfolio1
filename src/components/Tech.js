@@ -10,9 +10,11 @@ import Typography from "@material-ui/core/Typography";
 const styles = makeStyles((theme) => ({
 	techIcons: {
 		margin: "1rem",
-		fontSize: "3rem",
+		fontSize: "7rem",
+		color: "white"
 	},
-	techNames: { margin: "1rem" },
+	techNames: { margin: "1rem",
+	color: "white" },
 }));
 
 
@@ -25,15 +27,15 @@ export default function Tech(){
         ];
 
     return (
-        <Grid item container direction="column" justify="center" alignItems="center">
-            <Grid item><Typography variant="h4">Technologies</Typography></Grid>
+        <Grid item container direction="column" style={{ backgroundColor: "black"}}justify="center" alignItems="center">
+            <Grid item><Typography variant="h4" style={{ color: "white"}}>Technologies</Typography></Grid>
             <Grid item container direction="row" alignItems="center" justify="center">
                 {technologies.map((tech, index) => {
                     return (
                         <Grid item style={{ textAlign: "center"}} key={index    }>
                             <FontAwesomeIcon
                                 icon={tech.icon} title={tech.name} className={classes.techIcons} alt={tech.name} />
-                                <p className={classes.techNames}>tech.name</p>
+                                <p className={classes.techNames}>{tech.name}</p>
                                 </Grid>
                             )
                         })}

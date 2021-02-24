@@ -4,12 +4,12 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import Button from "@material-ui/core/Button";
-import BannerImage from "../assets/images/BannerImage.jpg";
+import BannerImage from "../assets/images/BannerImage2.jpg";
 
 
 const styles = makeStyles((theme) => ({
 	mainContainer: {
-        height: "80vh",
+        height: "90vh",
 	},
     heroBackground: {
         backgroundImage: `url(${BannerImage})`,
@@ -40,16 +40,16 @@ export default function HeroBanner() {
 				direction="row"
 			>
 				<Grid item className={classes.heroBackground}>
-					<Typography className={classes.heroBannerText} variant="h5" align="left" style={{marginTop: "1em"}}>
+					<Typography className={classes.heroBannerText} variant="h5" align="left" style={{marginTop: "1em", marginLeft: "7.5em"}}>
 						Hello I'm
 					</Typography>
-					<Typography className={classes.heroBannerText} variant="h2" align="left">
-						Steven Mercer
+					<Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
+						Steven Mercer,
 					</Typography>
-					<Typography className={classes.heroBannerText} variant="h2" align="left">
+					<Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
                         I do amazing things for the web!
 					</Typography>
-                    <Button className={classes.contactBtn} href="mailto:stevenmercer9913@gmail.com">
+                    <Button className={classes.contactBtn} href="mailto:stevenmercer9913@gmail.com" style={{ marginLeft: "11.5em"}}>
 					Contact Me
 				    </Button>
 				</Grid>

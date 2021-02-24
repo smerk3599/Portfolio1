@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
-import Avatar from "./../assets/images/avatar.png";
+import Avatar from "./../assets/images/avatar.jpg";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
@@ -24,7 +24,7 @@ export default function About(){
             <Grid container id="about" justify="space-around" alignItems="center" direction="row">
                 <Grid item>
                     <Typography variant="h2" align={matchesSM ? "center" : "left"}>About Me</Typography>
-                    <Typography variant="body1" className={classes.aboutMeBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit pellentesque justo, vel scelerisque purus vulputate a. Mauris commodo lacinia libero, eget consectetur tortor vestibulum vel. Suspendisse cursus ligula erat, in dictum ligula feugiat ac. Proin feugiat nulla non turpis elementum, sed accumsan ligula sagittis. Quisque aliquam suscipit sem, non dapibus mauris tempus molestie. Maecenas quis massa nec purus vestibulum fermentum non sit amet ligula. Proin vestibulum diam in enim accumsan tincidunt.
+                    <Typography variant="body1" className={classes.aboutMeBody}>I have been in customer service for a long time, and I am excited about working with applications and technologies for the web.  I want to create interesting and highly functional software while making a big difference in the processes as they are created.    I look forward to working with other developers to achieve these goals. When I am not coding or goofing it up with my family, I love the mountains, hockey, and games of all sorts.
                     </Typography>
                 </Grid>
                 <Grid item>
@@ -37,6 +37,8 @@ export default function About(){
                         display: "block",
                         marginLeft: "auto",
                         marginRight: "auto",
+                        marginTop: "1rem",
+                        marginBottom: "1rem"
                     }}
         />
 
