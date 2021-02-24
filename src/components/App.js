@@ -1,9 +1,28 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+
+import theme from "./ui/Theme";
+import { ThemeProvider } from "@material-ui/styles";
+import Header from "./ui/Header.js"
+import HeroBanner from "./HeroBanner"
+import About from "./About"
+import Tech from "./Tech"
+
+import Experience from "./Experience"
+import Footer from "./Footer"
 
 export default function App() {
   return (
-    <div>
-        <h1>Hello World!</h1>
-    </div>
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                <Header />
+                <HeroBanner />
+                <About />
+                <Tech />
+                <Experience />
+                <Footer />
+            </BrowserRouter>
+        </ThemeProvider>
   );
 }
