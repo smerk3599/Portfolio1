@@ -22,13 +22,14 @@ export default createMuiTheme({
 		}
 	},
 	button: {
-		marginLeft: "2.5rem",
+		margin: "1rem 2.5rem",
 		backgroundColor: myGreen,
 		color: "#fff",
 		borderRadius: "35px",
-		height: "30px",
+		height: "3rem",
 		padding: "10px",
 		fontSize: "1rem",
+		boxShadow:"5px 5px 8px black, 10px 10px 8px ghostwhite"
 	}
 
 });

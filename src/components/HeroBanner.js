@@ -25,8 +25,34 @@ const styles = makeStyles((theme) => ({
     },
     heroBannerText:{
         marginLeft: "1rem"
-    }
-
+    },
+	text:{
+		color: "black",
+		transition: theme.transitions.create('color', {
+  		duration: theme.transitions.duration.standard,
+	}),
+		"&:hover": {
+  		color: "yellow",
+		}
+	},
+	text2:{
+		color: "black",
+		transition: theme.transitions.create('color', {
+  		duration: theme.transitions.duration.standard,
+	}),
+		"&:hover": {
+  		color: "blue"
+		}
+	},
+	text3:{
+		color: "black",
+		transition: theme.transitions.create('color', {
+  		duration: theme.transitions.duration.standard,
+	}),
+		"&:hover": {
+  		color: "crimson",
+		}
+	}
 }));
 
 export default function HeroBanner() {
@@ -40,18 +66,21 @@ export default function HeroBanner() {
 				direction="row"
 			>
 				<Grid item className={classes.heroBackground}>
-					<Typography className={classes.heroBannerText} variant="h5" align="left" style={{marginTop: "1em", marginLeft: "7.5em"}}>
-						Hello I'm
+					<Typography className={classes.heroBannerText} variant="h4" align="left" style={{marginTop: "1em", marginLeft: "5.5em"}}>
+						<span className={classes.text}>Hello</span>, I'm
 					</Typography>
 					<Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
-						Steven Mercer,
+						<span className={classes.text2}>Steven Mercer</span>,
 					</Typography>
 					<Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
-                        I do amazing things for the web!
+                        I do <span className={classes.text3}>amazing</span> things for the web!
 					</Typography>
                     <Button className={classes.contactBtn} href="mailto:stevenmercer9913@gmail.com" style={{ marginLeft: "11.5em"}}>
 					Contact Me
 				    </Button>
+					<Button className={classes.contactBtn} href="https://docs.google.com/document/d/e/2PACX-1vQdhtceG3S1furer09jltTghkeUKg4NVYQmcmf8lIHTlaMzsYjJcyl4dFydZfqLedCdPy5mcrJ7ySnI/pub" style={{ marginLeft: "11.5em"}}>
+					Resume
+					</Button>
 				</Grid>
 			</Grid>
 		</React.Fragment>

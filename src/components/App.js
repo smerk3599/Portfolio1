@@ -8,7 +8,7 @@ import Header from "./ui/Header.js"
 import HeroBanner from "./HeroBanner"
 import About from "./About"
 import Tech from "./Tech"
-
+import Contact from "./Contact"
 import Experience from "./Experience"
 import Footer from "./Footer"
 
@@ -20,6 +20,7 @@ export default function App() {
                 <HeroBanner />
                 <About />
                 <Tech />
+                <Contact />
                 <Experience />
                 <Footer />
             </BrowserRouter>

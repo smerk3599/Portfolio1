@@ -9,7 +9,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Tab from "@material-ui/core/Tab";
 import Button from "@material-ui/core/Button";
-import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faQuestionCircle, faPaperPlane, faCogs, faEye} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // ==========
@@ -31,7 +31,11 @@ const styles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			marginRight: "2rem"
 		}
-    }
+    },
+	navIcons:{
+		margin: " auto 1em",
+		color: "white"
+	}
 }));
 
 export default function Header(props) {
@@ -42,6 +46,7 @@ export default function Header(props) {
 
     const routes = [
         {name: "About", link: "#about"},
+		{ name: "Technologies", link: "#tech" },
 		{ name: "Contact", link: "#contact" },
         { name: "Experience", link: "#experience" },
 	];
@@ -67,11 +72,35 @@ export default function Header(props) {
 		<React.Fragment>
 			<div className={classes.tabContainer}>
 				<Link to="#about">
-				<FontAwesomeIcon
-						icon={faQuestionCircle}
-						title="About Me"
+					<FontAwesomeIcon
+							icon={faQuestionCircle}
+							title="About Me"
+							className={classes.navIcons}
+							alt={"About Me"}
+						/>
+				</Link>
+				<Link to="#tech">
+					<FontAwesomeIcon
+						icon={faCogs}
+						title="Technologies"
 						className={classes.navIcons}
-						alt={"About Me"}
+						alt={"technologies"}
+					/>
+				</Link>
+				<Link to="#contact">
+					<FontAwesomeIcon
+						icon={faPaperPlane}
+						title="Contact"
+						className={classes.navIcons}
+						alt={"Contact"}
+					/>
+				</Link>
+				<Link to="#experience">
+					<FontAwesomeIcon
+						icon={faEye}
+						title="Experience"
+						className={classes.navIcons}
+						alt={"Experience"}
 					/>
 				</Link>
 			</div>
@@ -82,7 +111,7 @@ export default function Header(props) {
 
 	return (
 		<React.Fragment>
-			<AppBar position="fixed" color="secondary">
+			<AppBar position="fixed" color="secondary" style={{boxShadow: "5px 5px 8px black, 10px 10px 8px ghostwhite"}}>
                 <Toolbar disablegutters>
                     <Button disableRipple>
                         <img src={Logo} className={classes.logo} alt={"logo"}/></Button>
