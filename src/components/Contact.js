@@ -3,12 +3,28 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { useTheme, makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import ContactImage from "../assets/images/contactBkgd1.jpg";
 
 const styles = makeStyles((theme) => ({
+    mainContainer: {
+        height: "90vh",
+    },
     contactBackground:{
-        },
+        backgroundImage: `url(${ContactImage})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100%",
+        width: "100%"
+    },
     contact:{
         height: "100vh"
+    },
+    contactBtn:{
+        ...theme.button
+    },
+    contactText: {
+		...theme.typography.text1
     }
 }))
 
@@ -24,20 +40,21 @@ export default function Contact() {
             direction="column"
         >
             <Grid item className={classes.contactBackground}>
-                <Typography className={classes.heroBannerText} variant="h4" align="left" style={{marginTop: "1em", marginLeft: "5.5em"}}>
-                Phone : 415-509-1227
+                <Typography className={classes.contactText} variant="h1" align="center" style={{marginTop: "16rem", color: "ghostwhite"}}>
+                <span className={classes.text1}>Steven Mercer</span>
                 </Typography>
-                <Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
-                    <span className={classes.text2}>Steven Mercer</span>,
+                <Typography className={classes.contactText} variant="h3" align="center" style={{ marginLeft: "0", color: "ghostwhite"}}>
+                    Phone : <span className={classes.text2}>415-509-1227</span>
                 </Typography>
-                <Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>
-                    I do <span className={classes.text3}>amazing</span> things for the web!
+                <Typography className={classes.contactText} variant="h3" align="center" style={{ marginLeft: "0"}}>
+                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite"}}>stevenmercer9913@gmail.com</a>
                 </Typography>
-                <Button className={classes.contactBtn} href="mailto:stevenmercer9913@gmail.com" style={{ marginLeft: "11.5em"}}>
-                GitHub
-                </Button>
-                <Button className={classes.contactBtn} href="https://docs.google.com/document/d/e/2PACX-1vQdhtceG3S1furer09jltTghkeUKg4NVYQmcmf8lIHTlaMzsYjJcyl4dFydZfqLedCdPy5mcrJ7ySnI/pub" style={{ marginLeft: "11.5em"}}>
+
+                <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/" style={{ marginLeft: "27em"}}>
                 LinkdIn
+                </Button>
+                <Button className={classes.contactBtn} href="https://github.com/smerk3599" style={{ marginLeft: "12rem"}}>
+                GitHub
                 </Button>
             </Grid>
         </Grid>

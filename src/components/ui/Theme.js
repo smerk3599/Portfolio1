@@ -18,13 +18,24 @@ export default createMuiTheme({
 			fontSize: "1rem",
 		},
 		body1:{
-			maxWidth: "45ch"
+			maxWidth: "45ch",
+			fontSize: "1.5rem"
+		},
+		text2:{
+			textShadow: "4px 4px 4px ivory"
+		},
+		text1:{
+			textShadow: "5px 5px 8px black",
+			fontFamily: "Ralelway",
+			textTransform: "none",
+			fontWeight: 700,
+			fontSize: "5rem",
 		}
 	},
 	button: {
 		margin: "1rem 2.5rem",
 		backgroundColor: myGreen,
-		color: "#fff",
+		color: "#000",
 		borderRadius: "35px",
 		height: "3rem",
 		padding: "10px",

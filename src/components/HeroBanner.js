@@ -41,7 +41,8 @@ const styles = makeStyles((theme) => ({
   		duration: theme.transitions.duration.standard,
 	}),
 		"&:hover": {
-  		color: "blue"
+  		color: "blue",
+		...theme.typography.text2,
 		}
 	},
 	text3:{

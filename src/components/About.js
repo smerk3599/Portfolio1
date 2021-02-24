@@ -9,9 +9,11 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 const styles = makeStyles((theme) => ({
     aboutMeBody:{
         ...theme.typography.body1,
+        
         },
     about:{
-        height: "100vh"
+        height: "100vh",
+        backgroundColor: "ivory"
     }
 }))
 

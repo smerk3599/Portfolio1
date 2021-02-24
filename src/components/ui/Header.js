@@ -34,7 +34,7 @@ const styles = makeStyles((theme) => ({
     },
 	navIcons:{
 		margin: " auto 1em",
-		color: "white"
+		color: "black"
 	}
 }));
 
@@ -45,7 +45,8 @@ export default function Header(props) {
 	const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
     const routes = [
-        {name: "About", link: "#about"},
+		{ name: "Home", link: "#home"},
+        { name: "About", link: "#about"},
 		{ name: "Technologies", link: "#tech" },
 		{ name: "Contact", link: "#contact" },
         { name: "Experience", link: "#experience" },
@@ -56,7 +57,7 @@ export default function Header(props) {
 			<div className={classes.tabContainer}>
 				{routes.map((route, id) => {
 					return (
-						<Link to={route.link} style={{ textDecoration: "none", color:"#fff"}}>
+						<Link to={route.link} style={{ textDecoration: "none", color:"#000"}}>
                     		<Tab value={route.id} label={route.name} key={`${route}.${id}`}>
     							{route.name}
     						</Tab>
