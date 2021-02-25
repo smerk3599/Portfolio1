@@ -20,7 +20,7 @@ const styles = makeStyles((theme) => ({
 	project:{
 		height: "20vh",
 		width: "16vh",
-		marginBottom: "13vh"
+		marginBottom: "20vh"
 	},
 	projectImages:{
 		height: "20vh",
@@ -41,7 +41,7 @@ export default function Experience() {
 	return (
 		<React.Fragment>
 			<Grid container id="experience" className={classes.exp} direction="column" style={{ backgroundColor: "black"}} justify="center" alignItems="center">
-	            <Grid item><Typography variant="h2" style={{ color: "white", margin: "-8vh auto 8vh auto"}}>Projects</Typography></Grid>
+	            <Grid item><Typography variant="h2" style={{ color: "white", margin: "-3vh auto 8vh auto"}}>Projects</Typography></Grid>
 	            <Grid item container direction="row" alignItems="center" justify="space-around">
 	                {projects.map((project, index) => {
 	                    return (

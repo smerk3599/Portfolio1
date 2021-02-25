@@ -130,12 +130,13 @@ export default function Header(props) {
 
 	return (
 		<React.Fragment>
-			<AppBar position="fixed" color="secondary" style={{boxShadow: "5px 5px 8px black, 10px 10px 8px ghostwhite"}}>
-                <Toolbar disablegutters>
+			<AppBar position="fixed" color="secondary" style={{ boxShadow: "5px 5px 8px black, 10px 10px 8px ghostwhite"}}>
+                <Toolbar disablegutters >
                     <Button disableRipple>
-                        <img src={Logo} className={classes.logo} alt={"logo"}/></Button>
-						{matchesXS ? icons : tabs}
-						</Toolbar>
+                        <img src={Logo} className={classes.logo} alt={"logo"}/>
+					</Button>
+					{matchesXS ? icons : tabs}
+				</Toolbar>
 			</AppBar>
             <div className={classes.toolBarMargin}></div>
 		</React.Fragment>

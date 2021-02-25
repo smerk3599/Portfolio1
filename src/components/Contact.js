@@ -7,7 +7,7 @@ import ContactImage from "../assets/images/contactBkgd1.jpg";
 
 const styles = makeStyles((theme) => ({
     mainContainer: {
-        height: "90vh",
+        height: "100vh",
     },
     contactBackground:{
         backgroundImage: `url(${ContactImage})`,
@@ -25,17 +25,7 @@ const styles = makeStyles((theme) => ({
     },
     contactText: {
 		...theme.typography.text1
-    },
-	text:{
-		color: "black",
-		transition: theme.transitions.create('color', {
-  		duration: theme.transitions.duration.standard,
-	}),
-		"&:hover": {
-  		color: "yellow",
-		...theme.typography.text2,
-		}
-	}
+    }
 }))
 
 export default function Contact() {
@@ -49,22 +39,32 @@ export default function Contact() {
             alignItems="center"
             direction="column"
         >
-            <Grid item className={classes.contactBackground}>
+            <Grid container item className={classes.contactBackground}>
+                <Grid item justify="center" alignItems="center" style={{width: "100%"}}>
                 <Typography className={classes.contactText} variant="h1" align="center" style={{marginTop: "18vh", color: "ghostwhite"}}>
                 <span className={classes.text1}>Steven Mercer</span>
                 </Typography>
-                <Typography className={classes.contactText} variant="h3" align="center" style={{  color: "ghostwhite"}}>
-                    Phone : <br/><span className={classes.text2}>415-509-1227</span>
+                <Typography className={classes.contactText} variant="h2" align="center" style={{  color: "ghostwhite"}}>
+                    Phone : <br/>415-509-1227
                 </Typography>
-                <Typography className={classes.contactText} variant="h3" align="center" style={{ color: "ghostwhite"}}>Email:
-                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite", overflow: "hidden"}} className={classes.text}> stevenmercer9913@gmail.com</a>
-                </Typography>
-                <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/" style={{ marginLeft: "39vw"}}>
+                </Grid>
+                <Grid container item justify="center" style={{width: "100%"}}>
+                <Grid item>
+                <Button className={classes.contactBtn} href="mailto:stevenmercer9913@gmail.com">
+                Email
+                </Button>
+                </Grid>
+                <Grid item justify="center" alignItems="center">
+                <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/">
                 LinkdIn
                 </Button>
-                <Button className={classes.contactBtn} href="https://github.com/smerk3599" style={{ marginLeft: "9vw"}}>
+                </Grid>
+                <Grid item justify="center" alignItems="center">
+                <Button className={classes.contactBtn} href="https://github.com/smerk3599">
                 GitHub
                 </Button>
+                </Grid>
+                </Grid>
             </Grid>
         </Grid>
 		</React.Fragment>

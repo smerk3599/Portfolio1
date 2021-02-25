@@ -19,7 +19,7 @@ export default createMuiTheme({
 		},
 		body1:{
 			maxWidth: "45ch",
-			fontSize: "1.5rem"
+			fontSize: "1.25rem"
 		},
 		text2:{
 			textShadow: "4px 4px 4px ivory"
