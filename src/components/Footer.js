@@ -4,8 +4,8 @@ import Typography from "@material-ui/core/Typography";
 export default function Footer() {
 	return (
 		<React.Fragment>
-        <div style={{backgroundColor:"grey", color:"white"}}>
-			<h4 align ="center">stevenmercer9913@gmail.com</h4>
+        <div style={{height: "10vh", backgroundColor: "ghostwhite", color:"black"}}>
+			<h2 style={{paddingTop: "4vh"}} align ="center">                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none" }}>stevenmercer9913@gmail.com</a></h2>
         </div>
 		</React.Fragment>
 	);

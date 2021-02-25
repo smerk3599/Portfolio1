@@ -52,6 +52,7 @@ const styles = makeStyles((theme) => ({
 	}),
 		"&:hover": {
   		color: "crimson",
+		...theme.typography.text2,
 		}
 	}
 }));
@@ -61,13 +62,14 @@ export default function HeroBanner() {
 	const heroBanner = (
 		<React.Fragment>
 			<Grid
+				id="home"
 				className={classes.mainContainer}
 				container
 				alignItems="center"
 				direction="row"
 			>
 				<Grid item className={classes.heroBackground}>
-					<Typography className={classes.heroBannerText} variant="h4" align="left" style={{marginTop: "1em", marginLeft: "5.5em"}}>
+					<Typography className={classes.heroBannerText} variant="h4" align="left" style={{marginTop: "7em", marginLeft: "5.5em"}}>
 						<span className={classes.text}>Hello</span>, I'm
 					</Typography>
 					<Typography className={classes.heroBannerText} variant="h2" align="left" style={{ marginLeft: "3em"}}>

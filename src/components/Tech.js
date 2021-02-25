@@ -9,12 +9,15 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = makeStyles((theme) => ({
 	techIcons: {
-		margin: "6rem",
+		margin: "6rem 6rem 3rem 6rem",
 		fontSize: "7rem",
 		color: "white"
 	},
-	techNames: { margin: "1rem",
-	color: "white" },
+	techNames: {
+		margin: "1rem",
+		color: "white",
+		fontSize: "2rem",
+	},
 	tech: {
 		height: "100vh"
 	}

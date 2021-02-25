@@ -9,7 +9,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Tab from "@material-ui/core/Tab";
 import Button from "@material-ui/core/Button";
-import { faQuestionCircle, faPaperPlane, faCogs, faEye} from "@fortawesome/free-solid-svg-icons";
+import { faQuestionCircle, faPaperPlane, faCogs, faEye, faHome} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // ==========
@@ -72,6 +72,14 @@ export default function Header(props) {
 	const icons = (
 		<React.Fragment>
 			<div className={classes.tabContainer}>
+			<Link to="#home">
+				<FontAwesomeIcon
+						icon={faHome}
+						title="Home"
+						className={classes.navIcons}
+						alt={"Home"}
+					/>
+			</Link>
 				<Link to="#about">
 					<FontAwesomeIcon
 							icon={faQuestionCircle}

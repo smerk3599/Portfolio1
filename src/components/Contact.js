@@ -43,17 +43,16 @@ export default function Contact() {
                 <Typography className={classes.contactText} variant="h1" align="center" style={{marginTop: "16rem", color: "ghostwhite"}}>
                 <span className={classes.text1}>Steven Mercer</span>
                 </Typography>
-                <Typography className={classes.contactText} variant="h3" align="center" style={{ marginLeft: "0", color: "ghostwhite"}}>
-                    Phone : <span className={classes.text2}>415-509-1227</span>
+                <Typography className={classes.contactText} variant="h3" align="center" style={{  color: "ghostwhite"}}>
+                    Phone : <br/><span className={classes.text2}>415-509-1227</span>
                 </Typography>
-                <Typography className={classes.contactText} variant="h3" align="center" style={{ marginLeft: "0"}}>
-                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite"}}>stevenmercer9913@gmail.com</a>
+                <Typography className={classes.contactText} variant="h3" align="center" style={{ color: "ghostwhite"}}>Email:
+                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite", overflow: "hide"}}> stevenmercer9913@gmail.com</a>
                 </Typography>
-
-                <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/" style={{ marginLeft: "27em"}}>
+                <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/" style={{ marginLeft: "39vw"}}>
                 LinkdIn
                 </Button>
-                <Button className={classes.contactBtn} href="https://github.com/smerk3599" style={{ marginLeft: "12rem"}}>
+                <Button className={classes.contactBtn} href="https://github.com/smerk3599" style={{ marginLeft: "9vw"}}>
                 GitHub
                 </Button>
             </Grid>
