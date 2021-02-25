@@ -34,6 +34,7 @@ const styles = makeStyles((theme) => ({
 	}),
 		"&:hover": {
   		color: "yellow",
+		...theme.typography.text2,
 		}
 	},
 	text2:{
@@ -53,6 +54,7 @@ const styles = makeStyles((theme) => ({
 	}),
 		"&:hover": {
   		color: "crimson",
+		...theme.typography.text2,
 		}
 	}
 }));
@@ -74,7 +76,7 @@ export default function HeroBanner() {
 			>
 				<Grid container item className={classes.heroBackground}>
 					<Grid item justify="center" alignItems="center" style={{width: "100%"}}>
-						<Typography className={classes.heroBannerText} variant="h4" align="center" style={{marginTop: matchesXS ? "3em" : "7em"}}>
+						<Typography className={classes.heroBannerText} variant="h4" align="center" style={{marginTop: matchesXS ? "14vh" : "20vh"}}>
 							<span className={classes.text}>Hello</span>, I'm
 						</Typography>
 						<Typography className={classes.heroBannerText} variant="h2" align="center">

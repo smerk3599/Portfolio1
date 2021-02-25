@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 const styles = makeStyles((theme) => ({
 	techIcons: {
 		margin: "6vh 6vh 3vh 6vh",
-		fontSize: "5vh",
+		fontSize: "8vh",
 		color: "white"
 	},
 	techNames: {
@@ -35,7 +35,7 @@ export default function Tech(){
     return (
         <Grid item container id="tech" className={classes.tech} direction="row" style={{ backgroundColor: "black"}} justify="center">
             <Grid item>
-				<Typography variant="h2" style={{ color: "white"}}>
+				<Typography variant="h2" style={{ marginTop: "30vh", marginBottom: "-25vh", color: "white"}}>
 					Technologies
 				</Typography>
 			</Grid>

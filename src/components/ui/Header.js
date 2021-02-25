@@ -20,7 +20,7 @@ import { useTheme, makeStyles } from "@material-ui/core/styles";
 const styles = makeStyles((theme) => ({
 	toolBarMargin: {
 		...theme.mixins.toolbar,
-		marginBottom: "2em",
+		marginBottom: "2rem",
 	},
     logo: {
         marginLeft: "2rem",
@@ -33,7 +33,7 @@ const styles = makeStyles((theme) => ({
 		}
     },
 	navIcons:{
-		margin: " auto 1em",
+		margin: " auto .4rem",
 		color: "black"
 	},
 	text:{

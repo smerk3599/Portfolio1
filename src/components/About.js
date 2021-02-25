@@ -9,10 +9,10 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 const styles = makeStyles((theme) => ({
     aboutMeBody:{
         ...theme.typography.body1,
-        
+
         },
     about:{
-        height: "100vh",
+        height: "110vh",
         backgroundColor: "ivory"
     }
 }))
@@ -27,7 +27,7 @@ export default function About(){
         <React.Fragment>
             <Grid container id="about" className={classes.about} justify="space-around" alignItems="center" direction="row">
                 <Grid item>
-                    <Typography variant="h2" align={matchesSM ? "center" : "left"}>About Me</Typography>
+                    <Typography variant="h2" style={{marginTop: "13vh"}} align={matchesSM ? "center" : "left"}>About Me</Typography>
                     <Typography variant="body1" className={classes.aboutMeBody}>I have been in customer service for a long time, and I am excited about working with applications and technologies for the web.  I want to create interesting and highly functional software while making a big difference in the processes as they are created.    I look forward to working with other developers to achieve these goals. When I am not coding or goofing it up with my family, I love the mountains, hockey, and games of all sorts.
                     </Typography>
                 </Grid>
