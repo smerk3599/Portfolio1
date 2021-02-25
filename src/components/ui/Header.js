@@ -35,6 +35,16 @@ const styles = makeStyles((theme) => ({
 	navIcons:{
 		margin: " auto 1em",
 		color: "black"
+	},
+	text:{
+		color: "black",
+		transition: theme.transitions.create('color', {
+  		duration: theme.transitions.duration.standard,
+	}),
+		"&:hover": {
+  		color: "yellow",
+		...theme.typography.text2,
+		}
 	}
 }));
 
@@ -58,7 +68,7 @@ export default function Header(props) {
 				{routes.map((route, id) => {
 					return (
 						<Link to={route.link} style={{ textDecoration: "none", color:"#000"}}>
-                    		<Tab value={route.id} label={route.name} key={`${route}.${id}`}>
+                    		<Tab className={classes.text} value={route.id} label={route.name} key={`${route}.${id}`}>
     							{route.name}
     						</Tab>
 						</Link>

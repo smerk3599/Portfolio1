@@ -25,7 +25,17 @@ const styles = makeStyles((theme) => ({
     },
     contactText: {
 		...theme.typography.text1
-    }
+    },
+	text:{
+		color: "black",
+		transition: theme.transitions.create('color', {
+  		duration: theme.transitions.duration.standard,
+	}),
+		"&:hover": {
+  		color: "yellow",
+		...theme.typography.text2,
+		}
+	}
 }))
 
 export default function Contact() {
@@ -40,14 +50,14 @@ export default function Contact() {
             direction="column"
         >
             <Grid item className={classes.contactBackground}>
-                <Typography className={classes.contactText} variant="h1" align="center" style={{marginTop: "16rem", color: "ghostwhite"}}>
+                <Typography className={classes.contactText} variant="h1" align="center" style={{marginTop: "18vh", color: "ghostwhite"}}>
                 <span className={classes.text1}>Steven Mercer</span>
                 </Typography>
                 <Typography className={classes.contactText} variant="h3" align="center" style={{  color: "ghostwhite"}}>
                     Phone : <br/><span className={classes.text2}>415-509-1227</span>
                 </Typography>
                 <Typography className={classes.contactText} variant="h3" align="center" style={{ color: "ghostwhite"}}>Email:
-                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite", overflow: "hide"}}> stevenmercer9913@gmail.com</a>
+                    <a href="mailto:stevenmercer9913@gmail.com" style={{textDecoration: "none", color: "ghostwhite", overflow: "hidden"}} className={classes.text}> stevenmercer9913@gmail.com</a>
                 </Typography>
                 <Button className={classes.contactBtn} href="https://www.linkedin.com/in/stevemercer9913/" style={{ marginLeft: "39vw"}}>
                 LinkdIn

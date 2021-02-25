@@ -33,6 +33,7 @@ const styles = makeStyles((theme) => ({
 	}),
 		"&:hover": {
   		color: "yellow",
+		...theme.typography.text2,
 		}
 	},
 	text2:{
