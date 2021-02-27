@@ -10,7 +10,7 @@ import BannerImage from "../assets/images/BannerImage2.jpg";
 
 const styles = makeStyles((theme) => ({
 	mainContainer: {
-        height: "90vh",
+        height: "110vh",
 	},
     heroBackground: {
         backgroundImage: `url(${BannerImage})`,
@@ -76,7 +76,7 @@ export default function HeroBanner() {
 			>
 				<Grid container item className={classes.heroBackground}>
 					<Grid item justify="center" alignItems="center" style={{width: "100%"}}>
-						<Typography className={classes.heroBannerText} variant="h4" align="center" style={{marginTop: matchesXS ? "14vh" : "20vh"}}>
+						<Typography className={classes.heroBannerText} variant="h4" align="center" style={{marginTop: matchesXS ? "20vh" : "25vh"}}>
 							<span className={classes.text}>Hello</span>, I'm
 						</Typography>
 						<Typography className={classes.heroBannerText} variant="h2" align="center">

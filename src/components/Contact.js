@@ -7,7 +7,7 @@ import ContactImage from "../assets/images/contactBkgd1.jpg";
 
 const styles = makeStyles((theme) => ({
     mainContainer: {
-        height: "100vh",
+        height: "125vh",
     },
     contactBackground:{
         backgroundImage: `url(${ContactImage})`,
@@ -16,9 +16,6 @@ const styles = makeStyles((theme) => ({
         backgroundRepeat: "no-repeat",
         height: "100%",
         width: "100%"
-    },
-    contact:{
-        height: "100vh"
     },
     contactBtn:{
         ...theme.button
