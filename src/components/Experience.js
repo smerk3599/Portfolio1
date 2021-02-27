@@ -14,17 +14,17 @@ const styles = makeStyles((theme) => ({
 		marginLeft: "5vw"
 	},
     exp:{
-        height: "120vh",
+        height: "135vh",
         backgroundColor: "ivory"
     },
 	project:{
 		height: "20vh",
-		width: "16vh",
-		marginBottom: "20vh"
+		width: "142px",
+		margin: "5vh 5vw 20vh 5vw"
 	},
 	projectImages:{
 		height: "20vh",
-		width: "16vh"
+		width: "142px"
 	}
 }))
 

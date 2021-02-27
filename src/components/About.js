@@ -41,7 +41,7 @@ export default function About(){
                         display: "block",
                         marginLeft: "auto",
                         marginRight: "auto",
-                        marginTop: "1rem",
+                        marginTop: "8rem",
                         marginBottom: "1rem"
                     }}
         />
